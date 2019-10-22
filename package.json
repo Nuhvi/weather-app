@@ -1,0 +1,39 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app created using plain JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "start": "live-server ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazeh/js-restaurant-page.git"
+  },
+  "author": "Ar Nazeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nazeh/js-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Nazeh/js-restaurant-page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "fibers": "^4.0.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "optional": "^0.1.4",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
