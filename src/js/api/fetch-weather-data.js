@@ -4,13 +4,14 @@ const fetchWeatherData = async (cityName) => {
 
 
   try {
-    const responseWeather = await fetch(
+    const response = await fetch(
       `${BASE_ENDPOINT}?q=${cityName}&appid=${API_KEY}`,
       { mode: 'cors' },
     );
-    const weatherData = await responseWeather.json();
+    const weatherData = await response.json();
 
-    return weatherData;
+    if (`${weatherData.cod}` === '200') return weatherData;
+    return false;
   } catch (error) {
     return error;
   }
