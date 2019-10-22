@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch --mode production",
     "start": "live-server ./dist/"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Nazeh/js-restaurant-page#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
@@ -35,5 +36,9 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "babel-polyfill": "^6.26.0"
   }
 }
