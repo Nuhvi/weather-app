@@ -8,19 +8,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="grey darken-3">
     <div id="content" class="card white-text grey darken-4">
       <div id="weather-header" class="card-image">
-        <div class="gradient-overlay sunny"></div>
-        <img class="responsive-img" src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" />
-        <div class="data">
-          <span class="card-title">Card Title</span>
+        <div id="gradient-overlay" class="blue"></div>
+        <img
+          src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+        />
+        <div class="data card-content">
+          <div id="main-weather-data" class="left">
+            <span id="current-temp">7°C</span>
+            <span id="current-status">Rainy</span>
+          </div>
+          <div id="date-country" class="right">
+            <span>asd </span>
+          </div>
         </div>
       </div>
-      <div class="card-content">
-      </div>
+      <div class="card-content"></div>
     </div>
 
     <script type="module" src="bundle.js"></script>
