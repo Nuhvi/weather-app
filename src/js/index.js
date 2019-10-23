@@ -1,13 +1,8 @@
 import '../scss/main.scss';
-import fetchWeatherData from './api/fetch-weather-data.js';
+import weatherData from './api/weatherData';
 
-const query = async () => {
-  const data = await fetchWeatherData({
-    cityName: 'london',
-    dataType: 'forecast',
-    unitsFormat: 'imperial',
-  });
-  console.log(data);
+const init = async () => {
+  console.log(await weatherData.current('london'));
 };
 
-query();
+init();

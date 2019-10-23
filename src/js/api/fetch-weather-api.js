@@ -1,4 +1,4 @@
-const fetchWeatherData = async ({
+const fetchWeatherAPI = async ({
   cityName,
   dataType = 'weather',
   unitsFormat = 'metric',
@@ -8,8 +8,6 @@ const fetchWeatherData = async ({
 
   const url = `${BASE_ENDPOINT}${dataType}?q=${cityName}
   &appid=${API_KEY}&units=${unitsFormat}`;
-
-  console.log(url);
 
   try {
     const response = await fetch(url, { mode: 'cors' });
@@ -22,4 +20,4 @@ const fetchWeatherData = async ({
   }
 };
 
-export default fetchWeatherData;
+export default fetchWeatherAPI;
