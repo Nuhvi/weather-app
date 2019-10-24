@@ -1,8 +1,9 @@
 body{
   margin: 0;
+  background-color: #282828;
 }
 
-@media (min-width: 412px) {
+@media (min-width: 1025px) {
   #content {
     max-width: 375px;
     max-height: 800px;
@@ -56,5 +57,8 @@ header {
   h1{
     font-size: 2.6rem;
     margin-bottom: .5rem;
+    #country{
+      font-size: 1rem;
+    }
   }
 }
