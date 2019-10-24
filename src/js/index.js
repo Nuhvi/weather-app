@@ -1,11 +1,16 @@
 import '../scss/main.scss';
-import weatherData from './api/weatherData';
+import { format } from 'date-fns';
+import weatherData from './api/weatherData.js';
 import UI from './ui/ui.js';
+
 
 UI.render();
 
 const init = async () => {
-  console.log(await weatherData.current('london'));
+  const dt = (await weatherData.current('new york')).dateTime;
+  console.log(
+    format(new Date(dt), 'h:m a — iiii, dd MMM `yy'),
+  );
 };
 
 init();
