@@ -1,59 +1,60 @@
-#content {
-  max-width: 400px;
-  margin: auto;
-  border-radius: 1rem;
-  overflow: hidden;
-
-  font-family: 'Montserrat', sans-serif !important;
+body{
+  margin: 0;
 }
 
-#weather-header {
+@media (min-width: 412px) {
+  #content {
+    max-width: 375px;
+    max-height: 800px;
+    margin: 2rem auto;
+    border-radius: 2.5rem;
+    border: 0.5rem solid white;
+    box-shadow: 0px 0px 3rem .1rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+#content {
   position: relative;
-  height: 300px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 
-  #gradient-overlay {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
 
-    &.orange {
-      background-image: linear-gradient(
-        90deg,
-        rgb(255, 115, 0) 20%,
-        rgb(255, 169, 30) 100%
-      );
-    }
-    &.blue {
-      background-image: linear-gradient(
-        90deg,
-        rgb(0, 98, 255) 20%,
-        rgb(30, 221, 255) 100%
-      );
-    }
+  #background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50%;
+      filter: brightness(80%);
   }
-  .data {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9;
+}
 
-    #main-weather-data {
-        position: absolute;
-        bottom: 2rem;
-      #current-temp {
-        display: block;
-        font-size: 6rem;
-        line-height: 5rem;
-        font-weight: 700;
-      }
-      #current-status {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
+.container{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 0 2rem;
+}
+
+header {
+  display: grid;
+  align-content: space-between;
+  height: 30%;
+
+  nav{
+    padding: 2rem 0;
+  }
+
+  h1{
+    font-size: 2.6rem;
+    margin-bottom: .5rem;
   }
 }

@@ -5,36 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link
+      href="https://fonts.googleapis.com/css?family=Lato:700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body class="grey darken-3">
-    <div id="content" class="card white-text grey darken-4">
-      <div id="weather-header" class="card-image">
-        <div id="gradient-overlay" class="blue"></div>
-        <img
-          src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
-        />
-        <div class="data card-content">
-          <div id="main-weather-data" class="left">
-            <span id="current-temp">7°C</span>
-            <span id="current-status">Rainy</span>
+  <body>
+    <div id="content" class="white-text grey darken-4">
+      <img
+        id="background"
+        src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=689&q=80"
+      />
+      <div class="container">
+        <header>
+          <nav>sad</nav>
+
+          <div>
+            <h1 id="city-name">warsaw</h1>
+            <span id="date-time">5:31 PM — Thursday, 24 Oct `19</span>
           </div>
-          <div id="date-country" class="right">
-            <span>asd </span>
-          </div>
-        </div>
+        </header>
       </div>
-      <div class="card-content"></div>
     </div>
 
     <script type="module" src="bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
