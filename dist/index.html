@@ -5,26 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css?family=Lato:300&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <div id="content" class="white-text grey darken-4">
-      <img
-        id="background"
-        src=""
-      />
+      <img id="background" />
       <div class="container">
         <header>
-          <nav>
-          </nav>
-
+          <nav></nav>
           <div>
             <h1>
               <span id="city-name">london</span>
@@ -34,7 +29,14 @@
           </div>
         </header>
         <main>
-          <h2></h2>
+          <h2 id="temp" class="imperial">
+            <span id="tempC"></span>
+            <span id="tempF"></span>
+          </h2>
+          <h5>
+            <span id="description">Snowing</span>
+          </h5>
+          <div class="divider"></div>
         </main>
       </div>
     </div>

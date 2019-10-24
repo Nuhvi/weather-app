@@ -22,7 +22,7 @@ const weatherData = (() => {
     main: jsonData.weather[0].main,
     description: jsonData.weather[0].description,
     tempC: jsonData.main.temp,
-    tempF: jsonData.main.temp / 33.8,
+    tempF: jsonData.main.temp * 1.8000 + 32.00,
     wind: jsonData.wind.speed,
     humidity: jsonData.main.humidity,
     clouds: jsonData.clouds.all,
