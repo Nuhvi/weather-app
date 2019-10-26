@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
   </head>
 
   <body>
@@ -34,10 +35,28 @@
             <span id="tempF"></span>
           </h2>
           <h5>
+            <i id="icon" class="wi"></i>
             <span id="description">Snowing</span>
           </h5>
           <div class="divider"></div>
         </main>
+        <footer>
+          <section>
+            <span class="title">wind</span>
+            <span id="wind" class="data"></span>
+            <span class="unit">Km/h</span>
+          </section>
+          <section>
+            <span class="title">clouds</span>
+            <span id="clouds" class="data"></span>
+            <span class="unit">%</span>
+          </section>
+          <section>
+            <span class="title">humidity</span>
+            <span id="humidity" class="data"></span>
+            <span class="unit">%</span>
+          </section>
+        </footer>
       </div>
     </div>
 

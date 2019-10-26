@@ -9,7 +9,11 @@ UI.render();
 document.getElementById('background').src = clouds;
 
 const init = async () => {
-  const data = (await weatherData.current('london'));
+  const data = (await weatherData.current('istanbul'));
+  document.getElementById('wind').innerHTML = Math.round(data.wind);
+  document.getElementById('icon').classList.add('wi-day-cloudy-windy');
+  document.getElementById('humidity').innerHTML = data.humidity;
+  document.getElementById('clouds').innerHTML = data.clouds;
   document.getElementById('tempC').innerHTML = Math.round(data.tempC);
   document.getElementById('tempF').innerHTML = Math.round(data.tempF);
   document.getElementById('description').innerHTML = data.description;

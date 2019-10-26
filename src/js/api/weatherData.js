@@ -22,15 +22,15 @@ const weatherData = (() => {
     main: jsonData.weather[0].main,
     description: jsonData.weather[0].description,
     tempC: jsonData.main.temp,
-    tempF: jsonData.main.temp * 1.8000 + 32.00,
+    tempF: jsonData.main.temp * 1.8 + 32.0,
     wind: jsonData.wind.speed,
     humidity: jsonData.main.humidity,
     clouds: jsonData.clouds.all,
+    icon: jsonData.weather[0].icon,
   });
 
   const current = async (cityName) => {
     const jsonData = await getJson({ cityName });
-
     return parseData(jsonData);
   };
 
