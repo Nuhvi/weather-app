@@ -54,7 +54,49 @@ header {
   align-content: space-between;
 
   nav {
-    padding: 0;
+    padding: 2rem 0;
+    height: 2rem;
+
+    display: flex;
+    
+    img {
+      display: block;
+      height: 2rem;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    form {
+      margin: 0;
+      margin-right: 1rem;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 4rem auto;
+
+      button {
+        background: none;
+        border: none;
+        outline:none;
+      }
+
+      input{
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline:none;
+
+        color: white;
+        font-size: 1.2rem;
+
+        &::placeholder{
+          color: rgba(255, 255, 255, 0.486);
+        }
+      }
+    }
   }
 
   h1 {
@@ -155,7 +197,7 @@ footer {
       margin-bottom: 1rem;
     }
     .unit {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 }
