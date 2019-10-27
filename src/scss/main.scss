@@ -103,6 +103,19 @@ header {
           color: rgba(255, 255, 255, 0.486);
         }
       }
+
+      .suggestions-wrapper{
+        grid-column: 2;
+        grid-row: 2;
+
+        ul{
+          padding: 0;
+        }
+        li{
+          list-style: none;
+          opacity: .6;
+        }
+      }
     }
   }
 

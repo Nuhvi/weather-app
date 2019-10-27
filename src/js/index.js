@@ -2,6 +2,7 @@ import '../scss/main.scss';
 import weatherData from './api/weatherData.js';
 import DOM from './ui/dom.js';
 import geolocation from './api/geolocation.js';
+import Search from './ui/search.js';
 
 const content = document.getElementById('content');
 
@@ -21,9 +22,12 @@ const init = async () => {
 const form = document.getElementById('search-city');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const city = form.elements[1].value;
-  content.className = 'blur';
-  update(city);
+  const cityName = form.elements[1].value;
+
+  if (Search.isValidCityName(cityName)) {
+    content.className = 'blur';
+    update(cityName);
+  }
 });
 
 init();
