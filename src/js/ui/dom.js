@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 import brokenCloudsImg from '../../images/clouds.jpg';
 import sunnyImg from '../../images/sunny.jpg';
+import clearImg from '../../images/clear.jpg';
 import fewCloudsImg from '../../images/few-clouds.jpg';
 import scatteredCloudsImg from '../../images/scattered-clouds.jpg';
 import rainImg from '../../images/rain.jpg';
@@ -54,9 +55,11 @@ const DOM = (() => {
 
   const backgroundImage = (icon) => {
     const iconCode = icon.slice(0, 2);
+    const isDay = icon[3] === 'd';
 
     if (iconCode === '01') {
-      return sunnyImg;
+      if (isDay) { return sunnyImg; }
+      return clearImg;
     } if (iconCode === '02') {
       return fewCloudsImg;
     } if (iconCode === '03') {
