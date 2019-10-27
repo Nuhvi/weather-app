@@ -21,6 +21,11 @@ const DOM = (() => {
   const clouds = document.getElementById('clouds');
   const humidity = document.getElementById('humidity');
 
+  const temp = document.getElementById('temp');
+  temp.addEventListener('click', () => {
+    temp.classList.toggle('imperial');
+  });
+
   const formatDate = (date) => format(new Date(date), 'h:m a — iiii, dd MMM `yy');
 
   const iconClass = (icon) => {
