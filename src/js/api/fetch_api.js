@@ -3,9 +3,7 @@ const fetchAPI = async (url) => {
     const response = await fetch(url, { mode: 'cors' });
     const responseJson = await response.json();
 
-    if (`${responseJson.cod}` === '200') return responseJson;
-
-    return false;
+    return `${response.status}` === '200' ? responseJson : false;
   } catch (error) {
     return error;
   }
