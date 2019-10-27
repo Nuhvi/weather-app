@@ -1,6 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const isProd = process.env.NODE_ENV === 'production';
+const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
+const cssProd = [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'];
+const cssConfig = isProd ? cssProd : cssDev;
+
 module.exports = {
   entry: './src/js/index.js',
   output: {
@@ -11,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: cssConfig,
       },
       {
         test: /\.m?js$/,
@@ -39,11 +44,9 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-    // Options similar to the same options in webpackOptions.output
-    // all options are optional
       filename: '[name].css',
       chunkFilename: '[id].css',
-      ignoreOrder: false, // Enable to remove warnings about conflicting order
+      ignoreOrder: false,
     }),
   ],
 };

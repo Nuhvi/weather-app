@@ -25,6 +25,12 @@ body {
   color: white;
   text-transform: capitalize;
 
+  &.blur{
+    .container, #background{
+      filter: blur(15px);
+    }
+  } 
+
   #background {
     width: 100%;
     height: 100%;
