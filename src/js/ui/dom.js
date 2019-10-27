@@ -31,31 +31,31 @@ const DOM = (() => {
 
   const iconClass = (icon) => {
     const iconCode = icon.slice(0, 2);
-    const dayNight = icon[3] === 'd' ? 'day' : 'night';
+    const dayNight = icon[2] === 'd' ? 'day' : 'night';
 
     if (iconCode === '01') {
-      return `wi-${dayNight}-${dayNight === 'day' ? 'sunny' : 'clear'}`;
+      return `wi wi-${dayNight}-${dayNight === 'day' ? 'sunny' : 'clear'}`;
     } if (iconCode === '02') {
-      return `wi-${dayNight}-cloudy`;
+      return `wi wi-${dayNight}-cloudy`;
     } if (iconCode === '03') {
-      return 'wi-cloud';
+      return 'wi wi-cloud';
     } if (iconCode === '04') {
-      return 'wi-cloudy';
+      return 'wi wi-cloudy';
     } if (iconCode === '09') {
-      return `wi-${dayNight}-showers`;
+      return `wi wi-${dayNight}-showers`;
     } if (iconCode === '10') {
-      return `wi-${dayNight}-rain`;
+      return `wi wi-${dayNight}-rain`;
     } if (iconCode === '11') {
-      return `wi-${dayNight}-thunderstorm`;
+      return `wi wi-${dayNight}-thunderstorm`;
     } if (iconCode === '13') {
-      return `wi-${dayNight}-snow`;
+      return `wi wi-${dayNight}-snow`;
     }
-    return 'wi-windy';
+    return 'wi wi-windy';
   };
 
   const backgroundImage = (icon) => {
     const iconCode = icon.slice(0, 2);
-    const isDay = icon[3] === 'd';
+    const isDay = icon[2] === 'd';
 
     if (iconCode === '01') {
       if (isDay) { return sunnyImg; }
@@ -85,7 +85,7 @@ const DOM = (() => {
     dateTime.innerHTML = formatDate(data.dateTime);
     tempC.innerHTML = Math.round(data.tempC);
     tempF.innerHTML = Math.round(data.tempF);
-    icon.classList.add(iconClass(data.icon));
+    icon.className = iconClass(data.icon);
     description.innerHTML = data.description;
     wind.innerHTML = Math.round(data.wind);
     clouds.innerHTML = data.clouds;

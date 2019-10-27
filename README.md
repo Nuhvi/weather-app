@@ -14,10 +14,14 @@
   </a>
 </p>
 
- Weather app created using vanilla JS, connects to Open-weather and Ipfind APIs, and dynamically renders weather data for clients city or other cities chosen with the search form.
+ Weather app created using vanilla JS, connects to Open-weather and Ipfind APIs, and dynamically renders weather data -in Metric and Imperial units- for clients city or other cities chosen with the search form.
  The search form uses a modified list from OpenWeather to suggest and validate the user's input.
 
 ### ✨ [Demo](https://nazeh.github.io/weather-app)
+
+<img alt="Twitter: ArNazeh" src="docs/SharedScreenshot.jpg" />
+
+
 
 ## Install
 
@@ -56,5 +60,7 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [Ar Nazeh](https://github.com/Nazeh).<br />
 This project is [MIT](https://github.com/Nazeh/weather-app/blob/master/LICENSE) licensed.
 
+***
+Concept design : [Matt Wojtas](https://dribbble.com/)
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
