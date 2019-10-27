@@ -58,12 +58,12 @@ header {
     height: 2rem;
 
     display: flex;
-    
+
     img {
       display: block;
       height: 2rem;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -79,20 +79,21 @@ header {
       button {
         background: none;
         border: none;
-        outline:none;
+        outline: none;
       }
 
-      input{
+      input {
         width: 100%;
         background: none;
         border: none;
         border-bottom: 1px solid white;
-        outline:none;
+        outline: none;
 
         color: white;
         font-size: 1.2rem;
+        text-transform: capitalize;
 
-        &::placeholder{
+        &::placeholder {
           color: rgba(255, 255, 255, 0.486);
         }
       }

@@ -10,7 +10,16 @@ const update = async (city) => {
 
 const init = async () => {
   const clientCity = await geolocation.clientData();
-  if (clientCity) { update(clientCity); } else update('istanbul');
+  if (clientCity) {
+    update(clientCity);
+  } else update('barcelona');
 };
+
+const form = document.getElementById('search-city');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const city = form.elements[1].value;
+  update(city);
+});
 
 init();
