@@ -1,0 +1,52 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app created using JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "watch": "webpack --watch --mode development",
+    "start": "live-server ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazeh/weather-app.git"
+  },
+  "author": "Ar Nazeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nazeh/weather-app/issues"
+  },
+  "homepage": "https://github.com/Nazeh/weather-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "fibers": "^4.0.1",
+    "file-loader": "^4.2.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optional": "^0.1.4",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "babel-polyfill": "^6.26.0",
+    "date-fns": "^2.6.0",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "suggestions": "^1.6.0"
+  }
+}
