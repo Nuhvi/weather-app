@@ -7,7 +7,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/Nazeh/weather-app/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Nazeh/Weather App" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/Nazeh/Weather-App" />
   </a>
   <a href="https://twitter.com/ArNazeh" target="_blank">
     <img alt="Twitter: ArNazeh" src="https://img.shields.io/twitter/follow/ArNazeh.svg?style=social" />
