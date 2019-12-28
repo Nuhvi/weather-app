@@ -33,49 +33,46 @@ const DOM = (() => {
     const iconCode = icon.slice(0, 2);
     const dayNight = icon[2] === 'd' ? 'day' : 'night';
 
-    if (iconCode === '01') {
-      return `wi wi-${dayNight}-${dayNight === 'day' ? 'sunny' : 'clear'}`;
-    } if (iconCode === '02') {
-      return `wi wi-${dayNight}-cloudy`;
-    } if (iconCode === '03') {
-      return 'wi wi-cloud';
-    } if (iconCode === '04') {
-      return 'wi wi-cloudy';
-    } if (iconCode === '09') {
-      return `wi wi-${dayNight}-showers`;
-    } if (iconCode === '10') {
-      return `wi wi-${dayNight}-rain`;
-    } if (iconCode === '11') {
-      return `wi wi-${dayNight}-thunderstorm`;
-    } if (iconCode === '13') {
-      return `wi wi-${dayNight}-snow`;
+    switch (iconCode) {
+      case '04':
+        return 'wi wi-cloudy';
+      case '09':
+        return `wi wi-${dayNight}-showers`;
+      case '10':
+        return `wi wi-${dayNight}-rain`;
+      case '11':
+        return `wi wi-${dayNight}-thunderstorm`;
+      case '13':
+        return `wi wi-${dayNight}-snow`;
+      default:
+        return 'wi wi-cloud';
     }
-    return 'wi wi-windy';
   };
 
   const backgroundImage = (icon) => {
     const iconCode = icon.slice(0, 2);
     const isDay = icon[2] === 'd';
 
-    if (iconCode === '01') {
-      if (isDay) { return sunnyImg; }
-      return clearImg;
-    } if (iconCode === '02') {
-      return fewCloudsImg;
-    } if (iconCode === '03') {
-      return scatteredCloudsImg;
-    } if (iconCode === '04') {
-      return brokenCloudsImg;
-    } if (iconCode === '09') {
-      return rainImg;
-    } if (iconCode === '10') {
-      return lightRainImg;
-    } if (iconCode === '11') {
-      return snowImg;
-    } if (iconCode === '13') {
-      return mistImg;
+    switch (iconCode) {
+      case '01':
+        return isDay ? sunnyImg : clearImg;
+      case '02':
+        return fewCloudsImg;
+      case '03':
+        return scatteredCloudsImg;
+      case '04':
+        return brokenCloudsImg;
+      case '09':
+        return rainImg;
+      case '10':
+        return lightRainImg;
+      case '11':
+        return snowImg;
+      case '13':
+        return mistImg;
+      default:
+        return brokenCloudsImg;
     }
-    return brokenCloudsImg;
   };
 
   const render = (data) => {
