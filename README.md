@@ -19,7 +19,7 @@
 
 ### ✨ [Demo](https://raw.githack.com/Nazeh/weather-app/master/dist/index.html)
 
-<img alt="Twitter: ArNazeh" src="docs/SharedScreenshot.jpg" />
+<img alt="Twitter: ArNazeh" src="docs/SharedScreenshot.png" />
 
 
 
