@@ -20,7 +20,7 @@
 
 <img alt="screenshot" src="docs/screenshot.png" />
 
-> Design : [Matt Wojtas](https://dribbble.com/)
+> Design : [Matt Wojtas](https://dribbble.com/shots/5750933--3-WeatherNow-Mobile-App-Concept)
 
  Weather app created using vanilla JS, connects to Open-weather and Ipfind APIs, and dynamically renders weather data -in Metric and Imperial units- for clients city or other cities chosen with the search form.
  The search form uses a modified list from OpenWeather to suggest and validate the user's input.
@@ -51,7 +51,7 @@ npm start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page]( ).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Nazeh/weather-app/issues).
 
 ## Show your support
 
