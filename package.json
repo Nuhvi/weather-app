@@ -31,7 +31,7 @@
     "file-loader": "^4.2.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "optional": "^0.1.4",
     "sass": "^1.23.0",
     "sass-loader": "^8.0.0",
